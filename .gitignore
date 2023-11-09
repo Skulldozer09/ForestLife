@@ -2,7 +2,11 @@
 **ForestLife/Library/
 **ForestLife/Temp/ 
 **ForestLife/Logs/
+ForestLife/Library/PackageCache/*
+ForestLife/Library/*
+ForestLife/Temp/*
+ForestLife/Logs/*
 ForestLife/Library/PackageCache/
 ForestLife/Library/
-ForestLife/Temp/ 
+ForestLife/Temp/
 ForestLife/Logs/
