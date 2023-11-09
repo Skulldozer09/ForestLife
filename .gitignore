@@ -1,2 +1,4 @@
 **/Library/PackageCache/
-Library/ 
+**/Library/
+**/Temp/ 
+**/Logs/ 
