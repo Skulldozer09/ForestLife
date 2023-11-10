@@ -9,12 +9,6 @@ public class AIChase : MonoBehaviour
     public GameObject player;
     public float speed;
 
-    public Transform attackPoint;
-    public float attackRange = 1f;
-    public LayerMask playerC;
-    public int attackDamage = 10;
-    public float attackRate = 2f;
-    float nextAttackTime = 0f;
 
     private float distance;
     // Start is called before the first frame update
@@ -39,9 +33,11 @@ public class AIChase : MonoBehaviour
         
     }
 
+<<<<<<< HEAD
+=======
     void OnCollisionEnter(Collision other)
     {
-        if(other.tag == "player")
+        if(other.collider.tag == "player") //Weird error happened here, now fixed
         {
             Attack();
             nextAttackTime = Time.time + 1f / attackRate;
@@ -58,6 +54,7 @@ public class AIChase : MonoBehaviour
         }
     }
 
+>>>>>>> da703e5a77ff31c4ab4f39f6d0a233bd5915e87f
     // Update is called once per frame
     void Update()
     {
@@ -66,13 +63,5 @@ public class AIChase : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
 
-        if (Time.time >= nextAttackTime)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Attack();
-                nextAttackTime = Time.time + 1f / attackRate;
-            }
-        }
     }
 }
