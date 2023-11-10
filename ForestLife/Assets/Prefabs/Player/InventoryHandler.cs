@@ -26,6 +26,10 @@ public class InventoryHandler : MonoBehaviour
     [SerializeField] protected int RawVegLimit = 99;
     [SerializeField] protected int CookedVegLimit = 99;
     [SerializeField] protected int SeedsLimit = 99;
+    [SerializeField] protected int currentInvSlot = 0;
+    protected int firstInvSlot = 0;
+    protected int lastInvSlot = 15;
+    Vector3 scrollWheel;
     public void ReceivePickupInfo(int pickupID, float value, GameObject PickupRef) //Function to give the player HP or other pickups
     {
         if (pickupID == 1) //HP Pickup
@@ -178,5 +182,38 @@ public class InventoryHandler : MonoBehaviour
     void InventoryUpdated()
     {
         //Update the UI here
+    }
+    void Update()
+    {
+        scrollWheel.x = Input.GetAxisRaw("Mouse ScrollWheel");
+    }
+    private void FixedUpdate()
+    {
+        if (scrollWheel.x > 0f)
+        {
+            Debug.Log("Scrolling Up " + scrollWheel.x);
+            int tempSlot = currentInvSlot + 1;
+            if (tempSlot > lastInvSlot)
+            {
+                currentInvSlot = firstInvSlot; //Loop to first
+            }
+            else
+            {
+                currentInvSlot = tempSlot;
+            }
+        }
+        else if (scrollWheel.x < 0f)
+        {
+            Debug.Log("Scrolling Down " + scrollWheel.x);
+            int tempSlot = currentInvSlot - 1;
+            if (tempSlot < firstInvSlot)
+            {
+                currentInvSlot = lastInvSlot; //Loop to last
+            }
+            else
+            {
+                currentInvSlot = tempSlot;
+            }
+        }
     }
 }

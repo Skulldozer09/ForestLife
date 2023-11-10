@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7765784198758753010}
   - component: {fileID: 4004001283943322874}
   - component: {fileID: 7409562996670294185}
+  - component: {fileID: 683226539572765944}
+  - component: {fileID: 5457160670092460081}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -182,6 +184,7 @@ MonoBehaviour:
   RawVegLimit: 99
   CookedVegLimit: 99
   SeedsLimit: 99
+  currentInvSlot: 0
 --- !u!95 &7409562996670294185
 Animator:
   serializedVersion: 5
@@ -203,6 +206,38 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &683226539572765944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2302399902093378502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89fcb29742787942b6de26eff753fb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthAmount: 100
+--- !u!114 &5457160670092460081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2302399902093378502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ceeb0da8941ef47b2a5e87c07ec246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoint: {fileID: 7412314830593634680}
+  attackRange: 2
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  attackDamage: 10
+  attackRate: 2
 --- !u!1 &3910356168871138266
 GameObject:
   m_ObjectHideFlags: 0
