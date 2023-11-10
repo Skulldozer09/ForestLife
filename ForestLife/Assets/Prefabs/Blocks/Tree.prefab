@@ -172,6 +172,22 @@ PrefabInstance:
       propertyPath: NewBlockRef
       value: 
       objectReference: {fileID: 3336661595489659644, guid: fdd3ec430c21d3143b0e820794a302ed, type: 3}
+    - target: {fileID: 5285991271470564103, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
+      propertyPath: LootRefs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285991271470564103, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
+      propertyPath: LootAmounts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285991271470564103, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
+      propertyPath: LootRefs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8189044327339221953, guid: d0115dd4c6002bf4f8a34e385fdf41be, type: 3}
+    - target: {fileID: 5285991271470564103, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
+      propertyPath: LootAmounts.Array.data[0]
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
