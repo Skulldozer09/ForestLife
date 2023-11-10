@@ -8,16 +8,12 @@ public class BlockDataEditorUpdate1 : MonoBehaviour
     void Awake()
     {
         MainSpriteLocal = gameObject.GetComponent<BlockData>().GetBlockSpriteForEditor();
-        if (gameObject.GetComponent<SpriteRenderer>())
-        {
-            gameObject.GetComponent<SpriteRenderer>().sprite = MainSpriteLocal;
-        }
-        
+        gameObject.GetComponent<SpriteRenderer>().sprite = MainSpriteLocal;
     }
 
     void Update()
     {
-        if (MainSpriteLocal && gameObject.GetComponent<SpriteRenderer>().sprite)
+        if (MainSpriteLocal)
         {
             MainSpriteLocal = gameObject.GetComponent<BlockData>().GetBlockSpriteForEditor();
             gameObject.GetComponent<SpriteRenderer>().sprite = MainSpriteLocal;

@@ -50,11 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3379526276000478100, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
       propertyPath: m_Name
-      value: Workbench
-      objectReference: {fileID: 0}
-    - target: {fileID: 3379526276000478100, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
-      propertyPath: m_TagString
-      value: WorkBench
+      value: BaseBlock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

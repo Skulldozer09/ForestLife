@@ -6,27 +6,6 @@ TagManager:
   tags:
   - Cooking Pot
   - Enemy
-  - Pickup
-  - Barrel
-  - BaseBlock
-  - BaseDoor
-  - Bush
-  - Campfire
-  - CookingPot
-  - CropPlot
-  - Fence
-  - Housing
-  - Log
-  - Rock
-  - Stump
-  - Torches
-  - Tree
-  - Trough
-  - Wall
-  - Well
-  - WoodDoor
-  - WoodFence
-  - WorkBench
   layers:
   - Default
   - TransparentFX

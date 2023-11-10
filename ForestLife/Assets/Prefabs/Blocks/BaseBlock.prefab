@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -2100771026474166844}
   m_Layer: 3
   m_Name: BaseBlock
-  m_TagString: BaseBlock
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,8 +127,7 @@ MonoBehaviour:
   Defense: 0
   NewBlockRef: {fileID: 0}
   ShowHealthBar: 0
-  LootIds: 
-  LootAmounts: 
+  LootIds: []
   MainSprite: {fileID: -1722126508, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}
   CanAge: 0
   OldSprite: {fileID: 0}
