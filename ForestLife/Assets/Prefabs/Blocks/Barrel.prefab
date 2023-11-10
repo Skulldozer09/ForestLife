@@ -48,24 +48,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2601953825339322355, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 5b54b64aa03a6418fa2cf8b50928ceb9, type: 3}
     - target: {fileID: 3379526276000478100, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
       propertyPath: m_Name
-      value: Barrel
-      objectReference: {fileID: 0}
-    - target: {fileID: 3379526276000478100, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
-      propertyPath: m_TagString
-      value: Barrel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5285991271470564103, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
-      propertyPath: MaxHP
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5285991271470564103, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
-      propertyPath: BlockName
       value: Barrel
       objectReference: {fileID: 0}
     - target: {fileID: 5285991271470564103, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
