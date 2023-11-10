@@ -41,7 +41,7 @@ public class AIChase : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if(other.collider.tag == "player") //Weird error happened here, now fixed
+        if(other.tag == "player")
         {
             Attack();
             nextAttackTime = Time.time + 1f / attackRate;
