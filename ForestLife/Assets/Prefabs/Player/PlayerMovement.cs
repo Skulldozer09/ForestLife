@@ -12,6 +12,11 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed = 5f;
     public Rigidbody rb;
     Vector3 movementVector;
+<<<<<<< HEAD
+=======
+    public Animator animator;
+    public SpriteRenderer spriteRef;
+>>>>>>> da703e5a77ff31c4ab4f39f6d0a233bd5915e87f
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +38,20 @@ public class PlayerMovement : MonoBehaviour
     {
         movementVector.x = Input.GetAxisRaw("Horizontal");
         movementVector.y = Input.GetAxisRaw("Vertical");
+<<<<<<< HEAD
+=======
+        animator.SetFloat("Horizontal", movementVector.x);
+        if (movementVector.x >= 0)
+        {
+            spriteRef.flipX = false;
+        }
+        else
+        {
+            spriteRef.flipX = true;
+        }
+        animator.SetFloat("Vertical", movementVector.y);
+        animator.SetFloat("Speed", movementVector.sqrMagnitude);
+>>>>>>> da703e5a77ff31c4ab4f39f6d0a233bd5915e87f
     }
     public void DebugAttack(GameObject Target)
     {
