@@ -33,28 +33,6 @@ public class AIChase : MonoBehaviour
         
     }
 
-<<<<<<< HEAD
-=======
-    void OnCollisionEnter(Collision other)
-    {
-        if(other.collider.tag == "player") //Weird error happened here, now fixed
-        {
-            Attack();
-            nextAttackTime = Time.time + 1f / attackRate;
-        }
-    }
-
-    void Attack()
-    {
-        Collider[] hitPlayer = Physics.OverlapSphere(attackPoint.position, attackRange, playerC);
-
-        foreach (Collider Player in hitPlayer)
-        {
-            Player.GetComponent<Health>().TakeDamage(attackDamage);
-        }
-    }
-
->>>>>>> da703e5a77ff31c4ab4f39f6d0a233bd5915e87f
     // Update is called once per frame
     void Update()
     {

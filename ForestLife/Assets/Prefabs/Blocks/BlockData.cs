@@ -13,11 +13,7 @@ public class BlockData : MonoBehaviour
     [SerializeField] protected float Defense = 0;
     [Tooltip("Reference to the block this block should spawn in when it dies. If left blank, will not spawn a block")] [SerializeField] protected GameObject NewBlockRef;
     [SerializeField] protected bool ShowHealthBar = false;
-<<<<<<< HEAD
     [Tooltip("IDs of all the pickups to spawn when the block dies. This is the ID.")] [SerializeField] protected int[] LootIds;
-=======
-    [Tooltip("Refs of all the pickups to spawn when the block dies.")] [SerializeField] protected GameObject[] LootRefs;
->>>>>>> da703e5a77ff31c4ab4f39f6d0a233bd5915e87f
     [Tooltip("IDs of all the pickups to spawn when the block dies. This is the amount.")] [SerializeField] protected int[] LootAmounts;
     [SerializeField] protected Sprite MainSprite;
     [Tooltip("Whether this block can get old or not, for persisting between runs")] [SerializeField] protected bool CanAge = false;
@@ -66,22 +62,6 @@ public class BlockData : MonoBehaviour
         {
             Instantiate(NewBlockRef, gameObject.transform.position, Quaternion.identity);
         }
-<<<<<<< HEAD
-=======
-        if (LootRefs.Length > 0) //If at least 1 loot entry
-        {
-            for (int i = 0; i < LootRefs.Length; i++) //Loop through each item id to spawn
-            {
-                //LootIds[i]
-                for (int x = 0; x < LootAmounts[i]; x++) //Loop for each amount needed to spawn nearby
-                {
-                    //GameObject variableForPrefab = (GameObject)Resources.Load("Prefabs/Pickups/", typeof(GameObject));
-                    Vector3 ItemSpawnPos = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - 1, gameObject.transform.position.z);
-                    Instantiate(LootRefs[i], ItemSpawnPos, Quaternion.identity);
-                }
-            }
-        }
->>>>>>> da703e5a77ff31c4ab4f39f6d0a233bd5915e87f
         Delete();
     }
     private void OnCollisionEnter(Collision collision)
