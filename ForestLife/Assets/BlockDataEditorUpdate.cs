@@ -15,6 +15,7 @@ public class BlockDataEditorUpdate1 : MonoBehaviour
     {
         if (MainSpriteLocal)
         {
+            MainSpriteLocal = gameObject.GetComponent<BlockData>().GetBlockSpriteForEditor();
             gameObject.GetComponent<SpriteRenderer>().sprite = MainSpriteLocal;
         }
     } 
