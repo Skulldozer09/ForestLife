@@ -12,9 +12,7 @@ public class BlockDataEditorUpdate1 : MonoBehaviour
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = MainSpriteLocal;
         }
-        
     }
-
     void Update()
     {
         if (MainSpriteLocal && gameObject.GetComponent<SpriteRenderer>().sprite)
