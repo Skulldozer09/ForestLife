@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class InventoryHandler : MonoBehaviour
 {
@@ -28,8 +29,29 @@ public class InventoryHandler : MonoBehaviour
     [SerializeField] protected int SeedsLimit = 99;
     [SerializeField] protected int currentInvSlot = 0;
     protected int firstInvSlot = 0;
-    protected int lastInvSlot = 15;
+    protected int lastInvSlot = 14;
     Vector3 scrollWheel;
+    [SerializeField] protected GameObject HUDSpriteHolder;
+    [SerializeField] protected TextMeshPro TextRendererRef;
+    [SerializeField] protected Sprite currentSprite;
+    [SerializeField] protected Sprite pickaxeSprite;
+    [SerializeField] protected Sprite swordSprite;
+    [SerializeField] protected Sprite shovelSprite;
+    [SerializeField] protected Sprite bucketprite;
+    [SerializeField] protected Sprite thatchSprite;
+    [SerializeField] protected Sprite woodSprite;
+    [SerializeField] protected Sprite stoneSprite;
+    [SerializeField] protected Sprite metalSprite;
+    [SerializeField] protected Sprite ropeSprite;
+    [SerializeField] protected Sprite leatherSprite;
+    [SerializeField] protected Sprite cookedMeatSprite;
+    [SerializeField] protected Sprite rawMeatprite;
+    [SerializeField] protected Sprite cookedVegSprite;
+    [SerializeField] protected Sprite rawVegSprite;
+    [SerializeField] protected Sprite seedsSprite;
+    private bool eDown;
+    private bool qDown;
+
     public void ReceivePickupInfo(int pickupID, float value, GameObject PickupRef) //Function to give the player HP or other pickups
     {
         if (pickupID == 1) //HP Pickup
@@ -179,17 +201,98 @@ public class InventoryHandler : MonoBehaviour
         else
             return 0;
     }
-    void InventoryUpdated()
+    public void InventoryUpdated()
     {
-        //Update the UI here
+        if (currentInvSlot == 0) //Pickaxe
+        {
+            currentSprite = pickaxeSprite;
+            ApplyVisualChanges(currentSprite, 1);
+        }
+        else if (currentInvSlot == 1) //Sword
+        {
+            currentSprite = swordSprite;
+            ApplyVisualChanges(currentSprite, 1);
+        }
+        else if (currentInvSlot == 2) //Shovel
+        {
+            currentSprite = shovelSprite;
+            ApplyVisualChanges(currentSprite, 1);
+        }
+        else if (currentInvSlot == 3) //Bucket
+        {
+            currentSprite = bucketprite;
+            ApplyVisualChanges(currentSprite, 1);
+        }
+        else if (currentInvSlot == 4) //Thatch
+        {
+            currentSprite = thatchSprite;
+            ApplyVisualChanges(currentSprite, ThatchCount);
+        }
+        else if (currentInvSlot == 5) //Wood
+        {
+            currentSprite = woodSprite;
+            ApplyVisualChanges(currentSprite, WoodCount);
+        }
+        else if (currentInvSlot == 6) //Stone
+        {
+            currentSprite = stoneSprite;
+            ApplyVisualChanges(currentSprite, StoneCount);
+        }
+        else if (currentInvSlot == 7) //Metal
+        {
+            currentSprite = metalSprite;
+            ApplyVisualChanges(currentSprite, MetalCount);
+        }
+        else if (currentInvSlot == 8) //Leather
+        {
+            currentSprite = leatherSprite;
+            ApplyVisualChanges(currentSprite, LeatherCount);
+        }
+        else if (currentInvSlot == 9) //Rope
+        {
+            currentSprite = ropeSprite;
+            ApplyVisualChanges(currentSprite, RopeCount);
+        }
+        else if (currentInvSlot == 10) //Raw Meat
+        {
+            currentSprite = rawMeatprite;
+            ApplyVisualChanges(currentSprite, RawMeatCount);
+        }
+        else if (currentInvSlot == 11) //Cooked Meat
+        {
+            currentSprite = cookedMeatSprite;
+            ApplyVisualChanges(currentSprite, CookedMeatCount);
+        }
+        else if (currentInvSlot == 12) //Raw Veg
+        {
+            currentSprite = rawVegSprite;
+            ApplyVisualChanges(currentSprite, RawVegCount);
+        }
+        else if (currentInvSlot == 13) //Cooked Veg
+        {
+            currentSprite = cookedVegSprite;
+            ApplyVisualChanges(currentSprite, CookedVegCount);
+        }
+        else if (currentInvSlot == 14) //Seeds
+        {
+            currentSprite = seedsSprite;
+            ApplyVisualChanges(currentSprite, SeedsCount);
+        }
+    }
+    public void ApplyVisualChanges(Sprite SpriteToPutIn, int count)
+    {
+        HUDSpriteHolder.GetComponent<SpriteRenderer>().sprite = SpriteToPutIn;
+        TextRendererRef.text = "x" + count;
     }
     void Update()
     {
         scrollWheel.x = Input.GetAxisRaw("Mouse ScrollWheel");
+        eDown = Input.GetKeyDown(KeyCode.E);
+        qDown = Input.GetKeyDown(KeyCode.Q);
     }
     private void FixedUpdate()
     {
-        if (scrollWheel.x > 0f)
+        if (scrollWheel.x > 0f || eDown) 
         {
             Debug.Log("Scrolling Up " + scrollWheel.x);
             int tempSlot = currentInvSlot + 1;
@@ -201,8 +304,9 @@ public class InventoryHandler : MonoBehaviour
             {
                 currentInvSlot = tempSlot;
             }
+            InventoryUpdated();
         }
-        else if (scrollWheel.x < 0f)
+        else if (scrollWheel.x < 0f || qDown)
         {
             Debug.Log("Scrolling Down " + scrollWheel.x);
             int tempSlot = currentInvSlot - 1;
@@ -214,6 +318,8 @@ public class InventoryHandler : MonoBehaviour
             {
                 currentInvSlot = tempSlot;
             }
+            InventoryUpdated();
         }
+
     }
 }
