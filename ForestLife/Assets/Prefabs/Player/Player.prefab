@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6070599537939665143}
   - component: {fileID: 7312930751111405210}
   - component: {fileID: 7765784198758753010}
+  - component: {fileID: 4004001283943322874}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -151,13 +152,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DebugMode: 0
   debugAttackPoint: {fileID: 3910356168871138266}
+  debugAttackDamage: 20
   blockLayers:
     serializedVersion: 2
     m_Bits: 8
   DebugHitSprite: {fileID: 154122315, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
   movementSpeed: 5
-  debugDmg: 5
   rb: {fileID: 6070599537939665143}
+--- !u!114 &4004001283943322874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2302399902093378502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0610b75919521574ea60c6411d37c149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3910356168871138266
 GameObject:
   m_ObjectHideFlags: 0

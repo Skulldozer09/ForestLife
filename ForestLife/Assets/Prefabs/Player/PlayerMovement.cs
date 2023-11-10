@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public bool DebugMode = false;
     public GameObject debugAttackPoint;
     public float debugAttackDamage = 20f;
-    public LayerMask blockLayers;
+    //public LayerMask blockLayers;
     public Sprite DebugHitSprite;
     public float movementSpeed = 5f;
     public Rigidbody rb;
