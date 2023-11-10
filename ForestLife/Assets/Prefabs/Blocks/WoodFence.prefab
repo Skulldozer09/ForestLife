@@ -10,7 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6215945906184462853, guid: e0213be15abf5724a99aaa35e4da25a4, type: 3}
       propertyPath: m_Name
-      value: BaseDoor
+      value: WoodFence
+      objectReference: {fileID: 0}
+    - target: {fileID: 6215945906184462853, guid: e0213be15abf5724a99aaa35e4da25a4, type: 3}
+      propertyPath: m_TagString
+      value: WoodFence
       objectReference: {fileID: 0}
     - target: {fileID: 6620187466491575076, guid: e0213be15abf5724a99aaa35e4da25a4, type: 3}
       propertyPath: m_LocalPosition.x

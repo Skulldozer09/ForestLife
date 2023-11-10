@@ -56,6 +56,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel
       objectReference: {fileID: 0}
+    - target: {fileID: 3379526276000478100, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285991271470564103, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
+      propertyPath: MaxHP
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5285991271470564103, guid: 47093c9ff5292ec4c9cd50648fea77e6, type: 3}
       propertyPath: BlockName
       value: Barrel
