@@ -447,13 +447,13 @@ MonoBehaviour:
   pickaxeSprite: {fileID: 762804792, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
   swordSprite: {fileID: 21300000, guid: 5b54b64aa03a6418fa2cf8b50928ceb9, type: 3}
   shovelSprite: {fileID: 1737672109, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
-  bucketprite: {fileID: -703694536, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
-  thatchSprite: {fileID: -38345435, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
-  woodSprite: {fileID: -38345435, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
+  bucketprite: {fileID: 21300000, guid: 8f8c9da9ed5274c428c22a628aa0c8b2, type: 3}
+  thatchSprite: {fileID: 21300000, guid: a4c5148c82bf6aa4fbcac3a10efb10fc, type: 3}
+  woodSprite: {fileID: 21300000, guid: 5b54b64aa03a6418fa2cf8b50928ceb9, type: 3}
   stoneSprite: {fileID: -38345435, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
-  metalSprite: {fileID: -38345435, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
-  ropeSprite: {fileID: -38345435, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
-  leatherSprite: {fileID: -38345435, guid: 0d5e657ee5a074e4baa53d5b248a01d2, type: 3}
+  metalSprite: {fileID: 21300000, guid: df9b568fa302bbe4da333b04048973c4, type: 3}
+  ropeSprite: {fileID: 21300000, guid: da86bb86ecf538b49a0bd4f0e67206b6, type: 3}
+  leatherSprite: {fileID: 21300000, guid: beb65555857fa614ea37b25297a49f6e, type: 3}
   cookedMeatSprite: {fileID: 21300000, guid: ee6d7c0f2db0d4f4fa1fac6079e35dd5, type: 3}
   rawMeatprite: {fileID: 21300000, guid: bbe47759477bb7a429281227c3ab3b78, type: 3}
   cookedVegSprite: {fileID: 927338625, guid: d71a3dc7aa20fad4f9a99fc76a9254ba, type: 3}

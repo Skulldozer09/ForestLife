@@ -27,7 +27,7 @@ public class InventoryHandler : MonoBehaviour
     [SerializeField] protected int RawVegLimit = 99;
     [SerializeField] protected int CookedVegLimit = 99;
     [SerializeField] protected int SeedsLimit = 99;
-    [SerializeField] protected int currentInvSlot = 0;
+    [SerializeField] public int currentInvSlot = 0;
     protected int firstInvSlot = 0;
     protected int lastInvSlot = 14;
     Vector3 scrollWheel;
