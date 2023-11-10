@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8836268142780834020}
   - component: {fileID: 5104209022465638217}
   - component: {fileID: 8390142231870177729}
-  - component: {fileID: 5005289403883881083}
   m_Layer: 3
   m_Name: Enemy 3
   m_TagString: Player
@@ -101,24 +100,3 @@ MonoBehaviour:
   maxHealth: 50
   player: {fileID: 2302399902093378502, guid: f6590a16bd8ebbf4c9804b89f470ba07, type: 3}
   speed: 2.5
---- !u!65 &5005289403883881083
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7386402822118581343}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.125, y: 1.125, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}

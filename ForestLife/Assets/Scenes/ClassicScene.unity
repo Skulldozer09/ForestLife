@@ -11106,10 +11106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 2900050508371480725, guid: f6590a16bd8ebbf4c9804b89f470ba07, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 948051315}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2302399902093378502, guid: f6590a16bd8ebbf4c9804b89f470ba07, type: 3}
       insertIndex: 3
@@ -12870,18 +12867,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ceeb0da8941ef47b2a5e87c07ec246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackPoint: {fileID: 948051315}
+  attackPoint: {fileID: 1441606654}
   attackRange: 1.16
   enemyLayers:
     serializedVersion: 2
     m_Bits: 8
   attackDamage: 10
   attackRate: 2
---- !u!4 &739649286 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2900050508371480725, guid: f6590a16bd8ebbf4c9804b89f470ba07, type: 3}
-  m_PrefabInstance: {fileID: 645045395}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &741421164
 GameObject:
   m_ObjectHideFlags: 0
@@ -16074,37 +16066,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &948051314
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 948051315}
-  m_Layer: 0
-  m_Name: AttackPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &948051315
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 948051314}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09, y: -0.13000011, z: 0.89023834}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 739649286}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &951272174
 GameObject:
   m_ObjectHideFlags: 0
@@ -27401,6 +27362,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &1441606654 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7412314830593634680, guid: f6590a16bd8ebbf4c9804b89f470ba07, type: 3}
+  m_PrefabInstance: {fileID: 645045395}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1443739345
 GameObject:
   m_ObjectHideFlags: 0

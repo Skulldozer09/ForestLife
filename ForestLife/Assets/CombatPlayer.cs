@@ -31,7 +31,6 @@ public class CombatPlayer : MonoBehaviour
         foreach(Collider enemy in hitEnemies)
         {
             enemy.GetComponent<AIChase>().TakeDamage(attackDamage);
-            Debug.Log("Hit");
         }
     }
 
